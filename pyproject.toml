@@ -1,0 +1,16 @@
+[project]
+name = "air-compressor-timesfm"
+version = "0.1.0"
+description = "Simulated air compressor sensor output and TimesFM anomaly detector"
+readme = "README.md"
+authors = [
+    { name = "Julian Neytchev", email = "252271992+juliantxi@users.noreply.github.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "matplotlib==3.11.2",
+    "numpy==2.5.3",
+    "timesfm[torch]==3.0.2",
+    "torch==2.14.1",
+]
+

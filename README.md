@@ -22,8 +22,7 @@ should work.
    folder:
 
    ```sh
-   uv venv --python 3.13 --seed --managed-python
-   uv pip install -r requirements.txt
+   uv sync
    ```
 
 3. **Run the demo:**
