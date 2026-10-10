@@ -22,21 +22,14 @@ should work.
    folder:
 
    ```sh
-   uv venv --python 3.13 .venv
-   uv pip install --python .venv/bin/python -r requirements.txt
-   ```
-
-   Without uv, the standard library tools work too:
-
-   ```sh
-   python3 -m venv .venv
-   .venv/bin/pip install -r requirements.txt
+   uv venv --python 3.13 --seed --managed-python
+   uv pip install -r requirements.txt
    ```
 
 3. **Run the demo:**
 
    ```sh
-   .venv/bin/python compressor_demo.py
+   uv run compressor_demo.py
    ```
 
    The first run downloads the TimesFM 2.5 model weights (~800 MB) from
